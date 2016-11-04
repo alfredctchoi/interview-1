@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc12.tar.gz",
     "isomorphic-fetch": "^2.2.1",
+    "moment": "^2.15.2",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
@@ -32,6 +34,7 @@
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-filter": "^4.0.0",
+    "json-loader": "^0.5.4",
     "mocha": "^3.0.0",
     "nock": "^8.0.0",
     "postcss-loader": "^0.9.1",
