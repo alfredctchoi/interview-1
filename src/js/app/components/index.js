@@ -1,14 +1,15 @@
 import React from 'react'
+import InstagramListContainer from '../../instagram/containers/instagram-list-container'
+import InstragramSearchInput from '../../instagram/components/instagram-search-input'
 import styles from './index.css'
-import Button from '../containers/button'
-import { message } from '../../../services/i18n/i18n-service'
 
 const App = ({clickCount, buttonClick}) => (
-  <div className={styles.app}>
-    <div>
-      { message('app.helloWorld', { name: 'Alfred Choi' }) }
+  <div>
+    <div className={styles.pageTitle}>
+      <h1>Telus Instasearch</h1>
     </div>
-    <Button/>
+    <InstragramSearchInput />
+    <InstagramListContainer />
   </div>
 );
 

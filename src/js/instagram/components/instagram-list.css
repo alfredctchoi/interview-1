@@ -1,0 +1,13 @@
+@media screen and (min-width: 800px) {
+    .list {
+        width: 600px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .list {
+        width: 1000px;
+        margin: auto;
+    }
+}
