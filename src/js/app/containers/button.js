@@ -4,7 +4,7 @@ import { buttonClick } from '../actions/app'
 
 const stateToProps = ({ app }) => {
   return {
-    clickCount: app.clickCount
+    response: app.data
   }
 };
 

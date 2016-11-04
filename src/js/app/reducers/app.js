@@ -1,14 +1,21 @@
-import { ENUMS as APP_ENUMS } from '../actions/app'
+import {ENUMS as APP_ENUMS} from '../actions/app'
 
 const INITIAL_STATE = {
-  clickCount: 0
+  dataLoading: false,
+  data: null
 };
 
-const appReducer = (state = INITIAL_STATE, { type, payload }) => {
-  switch(type){
-    case APP_ENUMS.BUTTON_CLICK:
+const appReducer = (state = INITIAL_STATE, {type, payload}) => {
+  switch (type) {
+    case APP_ENUMS.BUTTON_CLICK_LOADING:
       return Object.assign({}, state, {
-        clickCount: state.clickCount + 1
+        dataLoading: true,
+        data: null
+      });
+    case APP_ENUMS.BUTTON_CLICK_LOADED:
+      return Object.assign({}, state, {
+        dataLoading: false,
+        data: payload.data
       });
     default:
       return state;

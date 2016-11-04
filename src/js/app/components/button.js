@@ -1,8 +1,9 @@
 import React from 'react'
 
-const AppButton = ({ clickCount, buttonClick }) => (
+const AppButton = ({ response, buttonClick }) => (
   <div>
-    <div>I have been clicked {clickCount} times</div>
+    <div>Server Response:</div>
+    <div>{JSON.stringify(response)}</div>
     <button type="button"
             onClick={() => buttonClick()}>
       Click me
