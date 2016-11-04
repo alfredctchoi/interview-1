@@ -5,6 +5,7 @@ import ReactDOM from  'react-dom'
 import reducer from './js/reducers'
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk'
+import styles from './global.css'
 
 //store
 const store = createStore(
