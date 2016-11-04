@@ -10,13 +10,6 @@ module.exports = {
     publicPath: '/',
     filename: 'app.js'
   },
-  resolve: {
-    root: path.resolve(__dirname),
-    alias: {
-      app: 'src/js/app'
-    },
-    extensions: ['', '.js', '.jsx']
-  },
   module: {
     loaders: [{
       test: /\.(js|jsx)$/,

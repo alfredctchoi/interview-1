@@ -1,4 +1,4 @@
-import { ENUMS as APP_ENUMS } from 'app/actions/app'
+import { ENUMS as APP_ENUMS } from '../actions/app'
 
 const INITIAL_STATE = {
   clickCount: 0

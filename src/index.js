@@ -1,5 +1,5 @@
 import {createStore, applyMiddleware} from 'redux'
-import App from 'app/components/index'
+import App from './js/app/components/index'
 import React from 'react'
 import ReactDOM from  'react-dom'
 import reducer from './js/reducers'

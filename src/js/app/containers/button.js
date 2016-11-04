@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
-import Button from 'app/components/button'
-import { buttonClick } from 'app/actions/app'
+import Button from '../components/button'
+import { buttonClick } from '../actions/app'
 
 const stateToProps = ({ app }) => {
   return {

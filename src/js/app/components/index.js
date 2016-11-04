@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './index.css'
-import Button from 'app/containers/button'
+import Button from '../containers/button'
 
 const App = ({clickCount, buttonClick}) => (
   <div className={styles.app}>
